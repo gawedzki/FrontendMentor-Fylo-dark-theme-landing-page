@@ -1,0 +1,84 @@
+@media only screen and (min-width: 740px) {
+  html {
+    background-image: linear-gradient(
+      hsl(217, 28%, 15%) 129.9rem,
+      hsl(218, 28%, 13%) 129.9rem
+    );
+  }
+  body {
+    background-image: url(../images/bg-curvy-desktop.svg);
+    background-size: 100% 44.9rem;
+    background-position-y: 85rem;
+  }
+  header {
+    max-width: 144rem;
+    height: 20rem;
+    padding: 7.2rem 8rem;
+  }
+  header > img {
+    width: 17.6rem;
+  }
+  header > a {
+    padding: 1.8rem 0;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-align: right;
+  }
+  header > a:nth-of-type(1) {
+    width: 10.6rem;
+  }
+  header > a:nth-of-type(2) {
+    width: 10rem;
+  }
+  header > a:nth-of-type(3) {
+    width: 9rem;
+  }
+  .intro {
+    width: 72rem;
+  }
+  .intro > h1 {
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .intro > p {
+    width: 63rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .pros {
+    width: 74rem;
+  }
+  .pros__sctn {
+    width: 36rem;
+  }
+  .pros__imgWrap {
+    height: 8.8rem;
+  }
+  .pros__imgWrap > img {
+    width: 100%;
+  }
+  .pros__sctn > h2 {
+    font-size: 2rem;
+  }
+
+  .button {
+    width: 28rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding: 1.9rem 0;
+    border-radius: 2.8rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .pros {
+    width: 88rem;
+  }
+  .pros__sctn:nth-child(odd) {
+    float: left;
+  }
+  .pros__sctn:nth-child(even) {
+    float: right;
+  }
+}
