@@ -1,3 +1,8 @@
+@media only screen and (max-width: 739px) {
+  .ftr__links > div + div {
+    margin-top: 50px;
+  }
+}
 @media only screen and (min-width: 740px) {
   html {
     background-image: linear-gradient(
@@ -33,8 +38,12 @@
   header > a:nth-of-type(3) {
     width: 9rem;
   }
+  main {
+    padding-bottom: 360px;
+  }
   .intro {
     width: 72rem;
+    margin: 0 auto 16.5rem;
   }
   .intro > h1 {
     margin-bottom: 3rem;
@@ -63,6 +72,62 @@
     font-size: 2rem;
   }
 
+  .colab {
+    width: 640px;
+    position: relative;
+  }
+  .colab > img {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .colab__sctn {
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .comments {
+    width: 360px;
+  }
+  .comments > img {
+    display: block;
+    width: 54px;
+    height: 44px;
+    top: 7px;
+    left: -7px;
+    z-index: -1;
+  }
+  .comments__sctn {
+    display: inline-block;
+    width: 360px;
+    padding: 40px 25px 20px;
+  }
+  .comments__sctn > p:first-child {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .register {
+    width: 90%;
+    max-width: 860px;
+    padding: 50px 75px 45px;
+    bottom: -115px;
+  }
+  .register > h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  .register > p {
+    width: 85%;
+    margin: 0 auto 35px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
   .button {
     width: 28rem;
     font-size: 1.8rem;
@@ -70,15 +135,113 @@
     padding: 1.9rem 0;
     border-radius: 2.8rem;
   }
+
+  footer {
+    padding: 200px 80px 90px;
+  }
+  .ftr {
+    width: 580px;
+  }
+  .ftr__links {
+    overflow: hidden;
+  }
+  .ftr__links > div {
+    float: left;
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .ftr__info {
+    margin-bottom: 80px;
+  }
+  .ftr__links {
+    margin-bottom: 80px;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .pros {
     width: 88rem;
+    margin-bottom: 4rem;
   }
   .pros__sctn:nth-child(odd) {
     float: left;
   }
   .pros__sctn:nth-child(even) {
     float: right;
+  }
+
+  .colab {
+    width: 1220px;
+    margin: 0 auto 135px;
+  }
+  .colab > img {
+    width: 50%;
+  }
+  .colab__sctn {
+    width: 555px;
+  }
+  .colab__sctn > h2 {
+    width: 60%;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .colab__sctn > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .colab__sctn > a {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .colab__arrow {
+    width: 18px;
+    height: 18px;
+  }
+
+  .comments {
+    width: 1160px;
+  }
+  .comments__sctn + .comments__sctn {
+    margin: 0 0 0 40px;
+  }
+
+  .register > input {
+    display: inline-block;
+    width: 480px;
+    margin: 0;
+  }
+  .register > .button {
+    display: inline-block;
+    width: 200px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  input + .button {
+    margin-left: 30px;
+  }
+
+  .ftr {
+    width: 1280px;
+    padding-left: 40px;
+  }
+  .ftr > div + div {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .ftr__imgWrap > img {
+    left: 0;
+  }
+  .ftr__info {
+    width: 775px;
+  }
+  .ftr__info > p {
+    display: inline-block;
+    width: 460px;
+    padding-right: 80px;
+  }
+  .ftr__contact {
+    display: inline-block;
+    width: 315px;
+    vertical-align: top;
   }
 }
