@@ -124,7 +124,7 @@
   .register > p {
     width: 85%;
     margin: 0 auto 35px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 21px;
   }
 
@@ -205,19 +205,23 @@
     margin: 0 0 0 40px;
   }
 
-  .register > input {
+  .email {
     display: inline-block;
     width: 480px;
     margin: 0;
   }
-  .register > .button {
+  .register__form > .button {
     display: inline-block;
     width: 200px;
     font-size: 14px;
     line-height: 14px;
+    vertical-align: bottom;
   }
-  input + .button {
-    margin-left: 30px;
+  .emailValidateMsg {
+    left: 40px;
+  }
+  .emailValidateMsg + input {
+    margin-left: 25px;
   }
 
   .ftr {
